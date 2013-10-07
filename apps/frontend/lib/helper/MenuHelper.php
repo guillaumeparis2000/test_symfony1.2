@@ -77,10 +77,18 @@ function get_menu($user) {
 
 
   $menu->addChild('comun', '@comun');
-  $menu['comun']->addChild('option1', '@comun_opcion1');
-  $menu['comun']->addChild('option2', '@comun_opcion2');
-  $menu['comun']->addChild('option3', '@comun_opcion3');
-  $menu['comun']->addChild('option4', '@comun_opcion4');
+  if ($user->hasCredential('impares')) {
+    $menu['comun']->addChild('option1', '@comun_opcion1');
+  }
+  if ($user->hasCredential('pares')) {
+    $menu['comun']->addChild('option2', '@comun_opcion2');
+  }
+  if ($user->hasCredential('impares')) {
+    $menu['comun']->addChild('option3', '@comun_opcion3');
+  }
+  if ($user->hasCredential('pares')) {
+    $menu['comun']->addChild('option4', '@comun_opcion4');
+  }
 
 
   return $menu->render();
