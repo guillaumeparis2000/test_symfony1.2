@@ -1,2 +1,122 @@
 # default values
-#all:
+all:
+  menus:
+    frontend_menu:
+      name:     Admin menu
+      children:
+        home:
+          label:    Home
+          route:    @homepage
+        signin:
+          label:    Sign in
+          route:    @sf_guard_signin
+          requires_no_auth: true
+        signout:
+          label:    Sign out
+          route:    @sf_guard_signout
+          requires_auth: true
+        contabilidad:
+          label:    Contabilidad
+          route:    @contabilidad
+          credentials: [contabilidad]
+          children:
+            contabilidad_opcion1:
+              label:  Opcion 1
+              route:  @contabilidad_opcion1
+              credentials: [contabilidad, impares]
+            contabilidad_opcion2:
+              label:  Opcion 2
+              route:  @contabilidad_opcion2
+              credentials: [contabilidad, pares]
+            contabilidad_opcion3:
+              label:  Opcion 3
+              route:  @contabilidad_opcion3
+              credentials: [contabilidad, impares]
+            contabilidad_opcion4:
+              label:  Opcion 4
+              route:  @contabilidad_opcion4
+              credentials: [contabilidad, pares]
+        produccion:
+          label:    Produccion
+          route:    @produccion
+          credentials: [produccion]
+          children:
+            produccion_opcion1:
+              label:  Opcion 1
+              route:  @produccion_opcion1
+              credentials: [produccion, impares]
+            produccion_opcion2:
+              label:  Opcion 2
+              route:  @produccion_opcion2
+              credentials: [produccion, pares]
+            produccion_opcion3:
+              label:  Opcion 3
+              route:  @produccion_opcion3
+              credentials: [produccion, impares]
+            produccion_opcion4:
+              label:  Opcion 4
+              route:  @produccion_opcion4
+              credentials: [produccion, pares]
+        comercial:
+          label:    Comercial
+          route:    @comercial
+          credentials: [comercial]
+          children:
+            comercial_opcion1:
+              label:  Opcion 1
+              route:  @comercial_opcion1
+              credentials: [comercial, impares]
+            comercial_opcion2:
+              label:  Opcion 2
+              route:  @comercial_opcion2
+              credentials: [comercial, pares]
+            comercial_opcion3:
+              label:  Opcion 3
+              route:  @comercial_opcion3
+              credentials: [comercial, impares]
+            comercial_opcion4:
+              label:  Opcion 4
+              route:  @comercial_opcion4
+              credentials: [comercial, pares]
+        callcenter:
+          label:    Callcenter
+          route:    @callcenter
+          credentials: [callcenter]
+          children:
+            callcenter_opcion1:
+              label:  Opcion 1
+              route:  @callcenter_opcion1
+              credentials: [callcenter, impares]
+            callcenter_opcion2:
+              label:  Opcion 2
+              route:  @callcenter_opcion2
+              credentials: [callcenter, pares]
+            callcenter_opcion3:
+              label:  Opcion 3
+              route:  @callcenter_opcion3
+              credentials: [callcenter, impares]
+            callcenter_opcion4:
+              label:  Opcion 4
+              route:  @callcenter_opcion4
+              credentials: [callcenter, pares]
+        comun:
+          label:    Comun
+          route:    @comun
+          requires_auth: true
+          children:
+            comun_opcion1:
+              label:  Opcion 1
+              route:  @comun_opcion1
+              credentials: [impares]
+            comun_opcion2:
+              label:  Opcion 2
+              route:  @comun_opcion2
+              credentials: [pares]
+            comun_opcion3:
+              label:  Opcion 3
+              route:  @comun_opcion3
+              credentials: [impares]
+            comun_opcion4:
+              label:  Opcion 4
+              route:  @comun_opcion4
+              credentials: [pares]
