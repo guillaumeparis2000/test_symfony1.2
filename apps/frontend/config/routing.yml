@@ -1,7 +1,120 @@
 # default rules
+contabilidad:
+  url: /contabilidad
+  param: { module: contabilidad, action: index}
+
+contabilidad_opcion1:
+  url: /contabilidad/opcion1
+  param: { module: contabilidad, action: opcion1}
+
+contabilidad_opcion2:
+  url: /contabilidad/opcion2
+  param: { module: contabilidad, action: opcion2}
+
+contabilidad_opcion3:
+  url: /contabilidad/opcion3
+  param: { module: contabilidad, action: opcion3}
+
+contabilidad_opcion4:
+  url: /contabilidad/opcion4
+  param: { module: contabilidad, action: opcion4}
+
+produccion:
+  url: /produccion
+  param: { module: produccion, action: index}
+
+produccion_opcion1:
+  url: /produccion/opcion1
+  param: { module: produccion, action: opcion1}
+
+produccion_opcion2:
+  url: /produccion/opcion2
+  param: { module: produccion, action: opcion2}
+
+produccion_opcion3:
+  url: /produccion/opcion3
+  param: { module: produccion, action: opcion3}
+
+produccion_opcion4:
+  url: /produccion/opcion4
+  param: { module: produccion, action: opcion4}
+
+comercial:
+  url: /comercial
+  param: { module: comercial, action: index}
+
+comercial_opcion1:
+  url: /comercial/opcion1
+  param: { module: comercial, action: opcion1}
+
+comercial_opcion2:
+  url: /comercial/opcion2
+  param: { module: comercial, action: opcion2}
+
+comercial_opcion3:
+  url: /comercial/opcion3
+  param: { module: comercial, action: opcion3}
+
+comercial_opcion4:
+  url: /comercial/opcion4
+  param: { module: comercial, action: opcion4}
+
+callcenter:
+  url: /callcenter
+  param: { module: callcenter, action: index}
+
+callcenter_opcion1:
+  url: /callcenter/opcion1
+  param: { module: callcenter, action: opcion1}
+
+callcenter_opcion2:
+  url: /callcenter/opcion2
+  param: { module: callcenter, action: opcion2}
+
+callcenter_opcion3:
+  url: /callcenter/opcion3
+  param: { module: callcenter, action: opcion3}
+
+callcenter_opcion4:
+  url: /callcenter/opcion4
+  param: { module: callcenter, action: opcion4}
+
+comun:
+  url: /comun
+  param: { module: comun, action: index}
+
+comun_opcion1:
+  url: /comun/opcion1
+  param: { module: comun, action: opcion1}
+
+comun_opcion2:
+  url: /comun/opcion2
+  param: { module: comun, action: opcion2}
+
+comun_opcion3:
+  url: /comun/opcion3
+  param: { module: comun, action: opcion3}
+
+comun_opcion4:
+  url: /comun/opcion4
+  param: { module: comun, action: opcion4}
+
+# default rules
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: content, action: index }
 
 default_index:
   url:   /:module

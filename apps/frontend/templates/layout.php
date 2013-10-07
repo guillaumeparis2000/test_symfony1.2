@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
   </head>
   <body>
+    <?php use_helper('Menu') ?>
+    <?php echo get_menu($sf_user); ?>
+
     <?php echo $sf_content ?>
   </body>
 </html>
