@@ -1,0 +1,3 @@
+all:
+  is_secure:  on        # off is the default value anyway
+  credentials: [[contabilidad, produccion, comercial, callcenter]]

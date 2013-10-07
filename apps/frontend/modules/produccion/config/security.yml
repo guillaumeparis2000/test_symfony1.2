@@ -1,0 +1,15 @@
+opcion1:
+    is_secure:   on        # Only for authenticated users
+    credentials: [ impares, produccion ]     # With the admin credential
+
+opcion2:
+    is_secure:   on        # Only for authenticated users
+    credentials: [ pares, produccion ]     # With the admin credential
+
+opcion3:
+    is_secure:   on        # Only for authenticated users
+    credentials: [ impares, produccion ]     # With the admin credential
+
+opcion4:
+    is_secure:   on        # Only for authenticated users
+    credentials: [ pares, produccion ]      # With the admin credential

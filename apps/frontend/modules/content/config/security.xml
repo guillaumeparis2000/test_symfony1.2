@@ -1,0 +1,10 @@
+all:
+    is_secure: on
+    credentials: basicPermission
+
+index:
+    is_secure: off
+
+new:
+    is_secure: on
+    credentials: basicPermission
